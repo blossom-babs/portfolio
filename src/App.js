@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./styles/app.scss";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
-import Vanillaprojects from "./components/Vanillaprojects";
+import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 
 function App() {
@@ -36,7 +36,7 @@ function App() {
     <div style={theme ? darkTheme : lightTheme}>
       <Nav getState={state} />
       <Header />
-      <Vanillaprojects />
+      <Projects />
       <div style={theme ? lightTheme : darkTheme}>
         <Footer linkStyle={theme ? darkColor : lightColor} />
       </div>

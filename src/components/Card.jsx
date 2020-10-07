@@ -8,7 +8,7 @@ function Card({ src, alt, proj, desc, lang, git, live }) {
       <div className="card">
         <div className="card__holder">
           <div className="card__holder--front">
-            <img src={src} alt={alt} />
+            <img className="card__holder--front--fi" src={src} alt={alt} />
           </div>
           <div className="card__holder--back">
             <h1 className="card__holder--back--header">{proj}</h1>

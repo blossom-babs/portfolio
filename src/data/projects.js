@@ -6,12 +6,14 @@ import insure from "../assets/insure.png";
 import todo from "../assets/todo-app.png";
 import keeper from "../assets/keeper-app.png";
 import hr from "../assets/hr.png";
+import portfolio from "../assets/portfolio.png";
 
 const projects = [
   {
     img: personalWeb,
     name: "Personal Website",
-    desc: "A developer's personal website",
+    desc:
+      "A developer's personal website built using flask as the backend framework for the contacts section",
     lang: "FLASK, JAVASCRIPT, HTML, SCSS",
     gitLink: "https://github.com/blossom-babs/website-template",
     liveLink: "https://blossom-app.herokuapp.com/",
@@ -91,12 +93,12 @@ const projects = [
     tag: "vanilla",
   },
   {
-    img: "",
+    img: portfolio,
     name: "Portfolio",
     desc: "A website for showcasing a developer's projects",
     lang: "react",
-    gitLink: "https://github.com/blossom-babs/website",
-    liveLink: "https://blossombabs.netlify.app/",
+    gitLink: "https://github.com/blossom-babs/portfolio",
+    liveLink: "https://github.com/blossom-babs/portfolio",
     tag: "react",
   },
 ];
