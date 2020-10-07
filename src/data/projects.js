@@ -98,7 +98,7 @@ const projects = [
     desc: "A website for showcasing a developer's projects",
     lang: "react",
     gitLink: "https://github.com/blossom-babs/portfolio",
-    liveLink: "https://github.com/blossom-babs/portfolio",
+    liveLink: "https://blo-portfolio.netlify.app/",
     tag: "react",
   },
 ];
