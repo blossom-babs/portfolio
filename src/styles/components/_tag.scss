@@ -1,0 +1,27 @@
+.tag {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 5rem;
+
+
+  &__div {
+    background: $secondaryDarkColor;
+    color: #fff;
+    width: 50%;
+    padding: 1rem 2rem;
+
+    @media screen and (min-width: 750px) {
+      width: 30%;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 20%;
+    }
+  }
+
+  &__heading {
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .2rem;
+  }
+}

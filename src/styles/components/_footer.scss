@@ -1,0 +1,53 @@
+.footer {
+  height: 100%;
+
+
+  &__content {
+    margin: 0 auto;
+    width: 90%;
+    padding: 1rem 0;
+
+    @media screen and (min-width: 750px) {
+      padding: 2rem 0;
+    }
+
+
+    &--contact {
+      h1 {
+        line-height: 2rem;
+      }
+
+      a {
+        line-height: 2rem;
+      }
+    }
+  }
+
+  &__website-plug {
+    padding: 1rem 0;
+
+
+    h1 {
+      font-size: 1.2rem;
+
+      a {
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  &__copyright {
+
+    @media screen and (min-width: 750px) {
+      text-align: center;
+    }
+
+  }
+}
+
+.flex {
+  @media screen and (min-width: 750px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}

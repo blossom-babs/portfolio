@@ -1,24 +1,45 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./styles/app.scss";
+import Header from "./components/Header";
+import Nav from "./components/Nav";
+import Vanillaprojects from "./components/Vanillaprojects";
+import Footer from "./components/Footer";
 
 function App() {
+  const [theme, setTheme] = useState(true);
+
+  function state(e) {
+    setTheme(!e);
+  }
+
+  const darkTheme = {
+    backgroundColor: `#1E202B`,
+    color: `#fff`,
+    backgroundImage: `url("https://www.transparenttextures.com/patterns/asfalt-light.png")`,
+  };
+
+  const lightTheme = {
+    backgroundColor: `#fff`,
+    color: `#262936`,
+    backgroundImage: `url("https://www.transparenttextures.com/patterns/asfalt-dark.png")`,
+  };
+
+  const lightColor = {
+    color: "#fff",
+  };
+
+  const darkColor = {
+    color: "#262936",
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={theme ? darkTheme : lightTheme}>
+      <Nav getState={state} />
+      <Header />
+      <Vanillaprojects />
+      <div style={theme ? lightTheme : darkTheme}>
+        <Footer linkStyle={theme ? darkColor : lightColor} />
+      </div>
     </div>
   );
 }
